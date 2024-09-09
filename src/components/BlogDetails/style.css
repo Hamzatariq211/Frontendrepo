@@ -1,0 +1,37 @@
+.blog-details .text-lg {
+
+font-size: 33px;
+font-weight: 700;
+line-height: 39.94px;
+letter-spacing: -0.015em;
+color: #1C1C1C;
+text-align: left;
+}
+.blog-details .text-md {
+
+font-size: 19px;
+font-weight: 300;
+line-height: 22.99px;
+letter-spacing: -0.015em;
+text-align: justify;
+color: #1C1C1C;
+padding: 0px 50px;
+}
+.blog-details .text-sm {
+  font-size: 19px;
+  font-weight: 400;
+  color: #1c1c1c;
+}
+
+.blog-details .profile {
+  border: 3px solid #3652E1;
+}
+
+
+@media screen and (max-width:768px) {
+  .blog-details .text-md {
+
+    
+    padding: 0px;
+    }
+}

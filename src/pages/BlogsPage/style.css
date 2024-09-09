@@ -1,0 +1,11 @@
+.blogs {
+  padding: 50px 0px;
+}
+.blogs .text-lg {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77.45px;
+  letter-spacing: -0.015em;
+  text-align: center;
+  color: #000000;
+}

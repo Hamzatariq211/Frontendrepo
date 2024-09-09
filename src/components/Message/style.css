@@ -1,0 +1,83 @@
+.message h3 {
+  font-family: "Poppins";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+.message p {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.message h6 {
+  font-family: "MonteCarlo";
+  font-size: 48px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .message h3 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .message p {
+    font-size: 18px;
+  }
+
+  .message h6 {
+    font-size: 36px;
+  }
+
+  .message .elipse-blue {
+    width: 200px;
+    height: 225px;
+    top: 80px;
+    left: 0px;
+  }
+
+  .message .elipse-dark-blue {
+    width: 198px;
+    height: 215px;
+    top: 100px;
+    left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .message h3 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .message p {
+    font-size: 16px;
+  }
+
+  .message h6 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .message h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .message p {
+    font-size: 14px;
+  }
+
+  .message h6 {
+    font-size: 24px;
+  }
+}

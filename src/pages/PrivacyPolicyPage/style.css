@@ -1,0 +1,38 @@
+ .privacy main p, .privacy main li{
+  font-size: 24px;
+  font-weight: 400px;
+  color: #000000;
+  margin-bottom: 0px;
+}
+.privacy main h4 {
+  font-size: 40px;
+  font-weight: 400px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .privacy main p , .privacy main li{
+    font-size: 20px;
+  }
+  .privacy main h4 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .privacy main p, .privacy main li {
+      font-size: 16px;
+    }
+    .privacy main h4 {
+      font-size: 24px;
+    }
+  }
+@media screen and (max-width: 576px) {
+  .privacy main p, .privacy main li {
+    font-size: 14px;
+  }
+  .privacy main h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

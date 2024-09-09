@@ -1,0 +1,125 @@
+.about-header {
+  background: url("../../assets/images/about.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+
+}
+.about-header .text-lg {
+  font-family: " Poppins";
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  
+  
+}
+.about-header .text-xs {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+}
+.about-header .border-left {
+  width: 8px;
+  height: 120px;
+  border-radius: 10px 1px 1px 10px;
+  background: #414db8;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+.about-header .btn-services {
+  height: 54px;
+  padding: 0px 26px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  color: #1f1f1f;
+  border: 0px;
+}
+.about-header .btn-contact {
+  height: 54px;
+  padding: 0px 26px;
+  border-radius: 8px;
+  background: transparent;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .about-header .text-lg {
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .about-header .text-xs {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .about-header .btn-services {
+    height: 44px;
+    padding: 0px 26px;
+    font-size: 18px;
+  
+  }
+  .about-header .btn-contact {
+    height: 44px;
+    padding: 0px 26px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .about-header .text-lg {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .about-header .text-xs {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-header .border-left {
+    width: 6px;
+    height: 70px;
+    border-radius: 10px 1px 1px 10px;
+    background: #414db8;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-header {
+    padding: 20px 0px;
+  }
+  .about-header .text-lg {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .about-header .text-xs {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .about-header .border-left {
+    width: 6px;
+    height: 50px;
+    border-radius: 10px 1px 1px 10px;
+    background: #414db8;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+  .about-header .btn-services {
+    height: 34px;
+    padding: 0px 26px;
+    font-size: 14px;
+  
+  }
+  .about-header .btn-contact {
+    height: 34px;
+    padding: 0px 26px;
+    font-size: 14px;
+  }
+}

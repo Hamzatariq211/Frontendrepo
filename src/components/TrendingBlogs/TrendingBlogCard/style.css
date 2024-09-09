@@ -1,0 +1,18 @@
+.trending-blog-card {
+ 
+  padding: 10px;
+}
+.trending-blog-card.active {
+  background: #ffffff;
+  border: 5px solid #3652e1;
+  border-radius: 12px;
+  padding: 10px;
+}
+.trending-blog-card .text-sm {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.1px;
+  text-align: left;
+  color: #1c1c1c;
+}
+
