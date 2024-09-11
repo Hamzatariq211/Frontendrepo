@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link for navigation
 import flutter from './../assets/images/flutter.png';
 import html5 from './../assets/images/html5.png';
 import css3 from './../assets/images/css3.png';
@@ -24,11 +25,13 @@ function Deliver() {
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-        <div
+        {/* Our Work Section */}
+        <Link
+          to="/work" // Redirect to "Our Work" page
           className="bg-gray-800 rounded-full p-4 sm:p-6 lg:p-8 text-white transition-transform transform hover:scale-105 hover:shadow-2xl relative overflow-hidden flex flex-col justify-center items-center"
           style={{
-            width: '100%', // Adjust to control the oval's width
-            height: '200px', // Adjust to control the oval's height
+            width: '100%',
+            height: '200px',
             backgroundImage: 'url(/path-to-your-background-image.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -37,12 +40,15 @@ function Deliver() {
           <h2 className="text-xl sm:text-2xl lg:text-3xl text-center font-bold mb-3 sm:mb-4 lg:mb-6 relative z-10">Our Work</h2>
           <p className="mb-2 sm:mb-3 lg:mb-4 text-base sm:text-lg lg:text-xl text-center relative z-10">Your vision, our code.</p>
           <span className="text-4xl sm:text-5xl lg:text-6xl relative z-10">&lt;/&gt;</span>
-        </div>
-        <div
+        </Link>
+
+        {/* Services Section */}
+        <Link
+          to="/services" // Redirect to "Services" page
           className="bg-gray-800 rounded-full p-4 sm:p-6 lg:p-8 text-white transition-transform transform hover:scale-105 hover:shadow-2xl relative overflow-hidden flex flex-col justify-center items-center"
           style={{
-            width: '100%', // Adjust to control the oval's width
-            height: '200px', // Adjust to control the oval's height
+            width: '100%',
+            height: '200px',
             backgroundImage: 'url(/path-to-your-background-image.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -59,12 +65,15 @@ function Deliver() {
             <img src={swift} alt="Service icon" className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-cover" />
             <img src={java} alt="Service icon" className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-cover" />
           </div>
-        </div>
-        <div
+        </Link>
+
+        {/* About Us Section */}
+        <Link
+          to="/about" // Redirect to "About Us" page
           className="bg-gray-800 rounded-full p-4 sm:p-6 lg:p-8 text-white transition-transform transform hover:scale-105 hover:shadow-2xl relative overflow-hidden flex flex-col justify-center items-center"
           style={{
-            width: '100%', // Adjust to control the oval's width
-            height: '200px', // Adjust to control the oval's height
+            width: '100%',
+            height: '200px',
             backgroundImage: 'url(/path-to-your-background-image.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -72,17 +81,18 @@ function Deliver() {
         >
           <h2 className="text-xl sm:text-2xl lg:text-3xl text-center font-bold mb-3 sm:mb-4 lg:mb-6 relative z-10">About Us</h2>
           <p className="mb-2 sm:mb-3 lg:mb-4 text-base sm:text-lg lg:text-xl text-center relative z-10">From humble beginnings in 2023, we've grown into a leading software house.</p>
-        </div>
+        </Link>
       </div>
+
       <div className="mt-4 sm:mt-6 lg:mt-10 text-center">
-        <a
-          href="#"
+        <Link
+          to="/view-all" // Redirect to "View All" page
           className="inline-block px-4 py-2 bg-blue-600 text-white font-bold text-sm sm:text-base lg:text-lg rounded-full shadow-md transition-transform transform hover:scale-105 hover:shadow-lg"
         >
           View All
-        </a>
-        {/* You can replace `href="#"` with the actual link to your view-all page */}
+        </Link>
       </div>
+
       <div className="mt-4 sm:mt-6 lg:mt-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg border border-gray-300 flex flex-col items-center transition-transform transform hover:scale-105 hover:shadow-2xl relative overflow-hidden">
@@ -112,7 +122,7 @@ function Deliver() {
               className="w-36 h-24 sm:w-32 sm:h-32 lg:w-60 lg:h-40 object-cover rounded-full relative z-10"
             />
             <p className="mt-2 text-center text-gray-700 text-xs sm:text-sm lg:text-base relative z-10">
-              "Machine learning enables systems to learn from data and improve their performance over time without being explicitly programmed."
+              "Machine learning is a subset of AI, enabling systems to learn and improve from experience automatically."
             </p>
           </div>
         </div>
