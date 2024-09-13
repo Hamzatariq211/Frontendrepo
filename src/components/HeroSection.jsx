@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
-import { motion, useInView } from 'framer-motion'; // Import Framer Motion
+import { motion, useInView } from 'framer-motion'; 
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
 import Web from './../assets/images/Web.png';
@@ -70,14 +71,13 @@ const HeroSection = () => {
     <div className="relative bg-gradient-to-r from-black to-blue-900 h-screen overflow-hidden">
       <Slider {...settings} className="h-full">
         {slides.map((slide, index) => {
-          // Set up ref and useInView to trigger animation every time slide comes into view
           const ref = useRef(null);
           const isInView = useInView(ref, { triggerOnce: false });
 
           return (
             <div
               key={index}
-              ref={ref} // Add ref to track the visibility of the slide
+              ref={ref} 
               className="flex flex-col md:flex-row items-center justify-between h-full p-4 sm:p-8 bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
@@ -86,9 +86,9 @@ const HeroSection = () => {
                 {/* Animated Title and Subtitle */}
                 <motion.div
                   className="flex flex-col justify-center text-center md:text-left w-full md:w-1/2 p-2 sm:p-4"
-                  initial={{ opacity: 0, x: -100 }} // Initial animation state
-                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }} // Reset animation when out of view
-                  transition={{ duration: 0.8 }} // Smooth transition duration
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
+                  transition={{ duration: 0.8 }}
                 >
                   <h2 className="text-4xl sm:text-6xl md:text-8xl text-white font-bold mb-4 sm:mb-6">
                     {slide.title}
@@ -97,13 +97,18 @@ const HeroSection = () => {
                     {slide.subtitle}
                   </p>
                   <div className="mt-4 sm:mt-8 flex flex-col sm:flex-row">
-                    <motion.button
-                      className="px-6 sm:px-8 py-3 sm:py-4 mb-2 sm:mb-0 sm:mr-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
-                      whileHover={{ scale: 1.05 }} // Button hover effect
-                      whileTap={{ scale: 0.95 }}    // Button click effect
-                    >
-                      Learn More
-                    </motion.button>
+                    
+                    {/* Link to About Page */}
+                    <Link to="/about">
+                      <motion.button
+                        className="px-6 sm:px-8 py-3 sm:py-4 mb-2 sm:mb-0 sm:mr-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded transition"
+                        whileHover={{ scale: 1.05 }} 
+                        whileTap={{ scale: 0.95 }}    
+                      >
+                        Learn More
+                      </motion.button>
+                    </Link>
+
                     <motion.button
                       onClick={() => setShowForm(true)}
                       className="px-6 sm:px-8 py-3 sm:py-4 mb-2 sm:mb-0 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded transition"
@@ -118,9 +123,9 @@ const HeroSection = () => {
                 {/* Animated Slide Image */}
                 <motion.div
                   className="w-full md:w-1/2 flex justify-center md:justify-end mt-4 md:mt-0 overflow-hidden"
-                  initial={{ opacity: 0, scale: 0.8 }} // Initial animation state
-                  animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }} // Reset animation when out of view
-                  transition={{ duration: 0.8 }} // Smooth transition duration
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+                  transition={{ duration: 0.8 }}
                 >
                   <img 
                     src={slide.image} 
