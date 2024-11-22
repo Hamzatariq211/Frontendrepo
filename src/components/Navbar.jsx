@@ -15,9 +15,9 @@ const Navbar = () => {
         {/* Logo and Company Name */}
         <div className="flex items-center">
           <img src={Logo} alt="Company Logo" className="h-8 w-8 mr-2" />
-          <h1 className="text-white text-lg font-bold">
+          <Link to="/" className="text-white text-lg font-bold" >
             Fusion Flare Technologies
-          </h1>
+          </Link>
         </div>
 
         {/* Hamburger Menu Icon */}
@@ -71,7 +71,7 @@ const Navbar = () => {
             Our Work
           </Link>
           <Link
-            to="/blogs"
+            to="/blogs/1"
             className="block py-2 text-gray-300 hover:text-white"
           >
             Blogs
