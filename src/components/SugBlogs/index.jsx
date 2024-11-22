@@ -8,7 +8,7 @@ const SugBlogs = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/blogs/`); // Fetch all blogs
+        const response = await axios.get(`https://fusionflare-02ef9f77a95d.herokuapp.com/api/blogs/`); // Fetch all blogs
         if (response) {
           setBlogs(response.data); // Set the last blog in the list
         }

@@ -11,7 +11,7 @@ const LastBlogDetails = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get(`http://127.0.0.1:8000/api/blogs/${id}/`); // Use the extracted id here
+        const response = await axios.get(`https://fusionflare-02ef9f77a95d.herokuapp.com/api/blogs/${id}/`); // Use the extracted id here
         if (response) {
           setBlog(response.data); // Set the blog data
         }
